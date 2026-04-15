@@ -1,63 +1,15 @@
 # My Pentesting Cheatsheet
 
----
+## Nmap
+nmap -sV -sC 10.x.x.x        ← default scan, top 1000 ports
+nmap -p- -sV 10.x.x.x        ← full port scan, all 65535 ports
+nmap -p- --min-rate 5000      ← faster full scan
 
-## Network Scanning (Nmap)
+## SMB
+smbclient -L 10.x.x.x        ← list shares
+smbclient \\\\ip\\share       ← connect to share
 
-# Default scan (scripts + service detection)
-nmap -sC -sV <target-ip>
-
-# Full port scan (all TCP ports)
-nmap -p- <target-ip>
-
-# Fast full port scan
-nmap -p- --min-rate 5000 <target-ip>
-
----
-
-## Telnet (Telecommunication Network Protocol)
-
-# Connect to Telnet service
-telnet <target-ip>
-
----
-
-## File Transfer Protocol (FTP)
-
-# Connect to FTP service
-ftp <target-ip>
-
-# List files on remote server
-ls
-
-# Download file from server
-get <filename>
-
----
-
-## Server Message Block (SMB Protocol)
-
-# List available shares
-smbclient -L <target-ip>
-
-# Connect to a specific share
-smbclient //<target-ip>/<share>
-
-# List files inside share
-ls
-
-# Download file from share
-get <filename>
-
----
-
-## Redis (Remote Dictionary Server)
-
-# Connect to Redis service
-redis-cli -h <target-ip>
-
-# List all stored keys
-keys *
-
-# Retrieve value from key
-get <keyname>
+## Redis
+redis-cli -h 10.x.x.x        ← connect
+keys *                        ← list all keys
+get <keyname>                 ← retrieve value
