@@ -16,6 +16,7 @@ nmap -sC -sV 10.129.114.42
 The scan showed:
 
  Port 21/tcp open — FTP (vsftpd 3.0.3)
+ 
  Nmap noted anonymous login allowed
 
 ## Exploitation
@@ -24,12 +25,15 @@ Connected to FTP using anonymous credentials.
 ftp 10.129.114.42
 
 Username: anonymous
+
 Password: (blank / just hit enter)
+
 Successfully logged in
 
-Listed files and downloaded the flag.
+Listed files and downloaded the flag using:
 
 ls
+
 get flag.txt
 
 ## What I Learned
