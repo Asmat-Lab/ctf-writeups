@@ -4,8 +4,9 @@
 **Category:** Starting Point / Tier 0  
 **Date:** April 2026
 
-## Overview
-- Goal: Gain access to the system and retrieve the flag
+## Summary
+Exploited an open Telnet service using default credentials 
+to gain root access.
   
 ## Enumeration
 I started by scanning the target using Nmap:
@@ -37,6 +38,8 @@ cat flag.txt
 
 
 ## What I Learned
-- Basic service enumeration with Nmap
-- How Telnet works and why it's insecure
-- Default credential attacks
+- How to use Nmap for basic service enumeration
+- What Telnet is and why it's considered insecure 
+  (credentials sent in plaintext)
+- Default credential attacks as a first step 
+  when finding open services
