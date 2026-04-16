@@ -38,8 +38,11 @@ Connected successfully with no credentials.
 Navigated directories and located the flag.
 
 ls
+
 cd James.P
+
 ls
+
 get flag.txt
 
 
