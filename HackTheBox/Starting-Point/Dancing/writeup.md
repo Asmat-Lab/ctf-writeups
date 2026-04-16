@@ -2,7 +2,7 @@
 
 **Difficulty:** Very Easy
 **Tier:** 0
-**Date:** April, 2026
+**Date:** April 2026
 
 ## Summary
 Exploited an SMB service with anonymous access enabled
@@ -26,7 +26,7 @@ smbclient -L 10.129.114.201
 - ADMIN$
 - C$
 - IPC$
-- WorkShares ← interesting, non-default share
+- WorkShares 
 
 ## Exploitation
 Attempted to connect to each share with no password.
