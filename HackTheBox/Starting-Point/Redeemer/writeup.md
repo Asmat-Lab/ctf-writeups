@@ -41,8 +41,11 @@ Ran basic Redis commands to enumerate the database
 and find the flag.
 
 info          ← get server info and keyspace
+
 select 0      ← select database 0
+
 keys *        ← list all keys
+
 get flag      ← retrieve the flag value
 
 
