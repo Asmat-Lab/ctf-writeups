@@ -1,7 +1,7 @@
 # Dancing — HackTheBox Starting Point
 
-**Difficulty:** Very Easy
-**Tier:** 0
+**Difficulty:** Very Easy  
+**Category:** Starting Point / Tier 0  
 **Date:** April 2026
 
 ## Summary
