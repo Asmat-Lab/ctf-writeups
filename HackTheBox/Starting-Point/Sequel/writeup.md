@@ -2,7 +2,7 @@
 
 **Difficulty:** Very Easy
 **Tier:** 1
-**Date:** April, 2026
+**Date:** April 2026
 
 ## Summary
 Connected to an exposed MySQL database using default
