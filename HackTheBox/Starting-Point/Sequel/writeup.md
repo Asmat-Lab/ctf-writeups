@@ -1,7 +1,9 @@
 # Sequel — HackTheBox Starting Point
 
 **Difficulty:** Very Easy
+
 **Tier:** 1
+
 **Date:** April 2026
 
 ## Summary
@@ -14,8 +16,7 @@ nmap -sV -sC 10.129.118.140
 **Results:**
 - Port 3306/tcp open — MySQL
 
-MySQL is running directly accessible on the network —
-no web application layer, raw database access.
+MySQL is running directly accessible on the network.
 
 ## Exploitation
 Attempted to connect to MySQL with common default
