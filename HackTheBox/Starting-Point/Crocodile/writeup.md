@@ -1,7 +1,9 @@
 # Crocodile — HackTheBox Starting Point
 
 **Difficulty:** Very Easy
+
 **Tier:** 1
+
 **Date:** April 2026
 
 
