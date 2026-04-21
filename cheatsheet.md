@@ -22,8 +22,8 @@ get <keyname>                 ← retrieve value
 ## Password Cracking (John the Ripper)
 
 **Crack with RockYou:**
-    ```
-    john --wordlist=/usr/share/wordlists/rockyou.txt <file name>
+    ```bash
+    john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
     ```
 *   **Check Already Cracked Passwords:**
     ```
