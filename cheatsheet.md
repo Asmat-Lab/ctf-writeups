@@ -1,38 +1,55 @@
 # My Pentesting Cheatsheet
 
 ## Nmap
-nmap -sV -sC 10.x.x.x        ← default scan, top 1000 ports
-
-nmap -p- -sV 10.x.x.x        ← full port scan, all 65535 ports
-
-nmap -p- --min-rate 5000      ← faster full scan
+*   **Default Scan:** (Top 1000 ports, service versions, default scripts)
+    ```bash
+    nmap -sV -sC 10.x.x.x
+    ```
+*   **Full Port Scan:** (All 65,535 ports)
+    ```bash
+    nmap -p- -sV 10.x.x.x
+    ```
+*   **Fast Full Scan:** (Aggressive rate to save time)
+    ```bash
+    nmap -p- --min-rate 5000 10.x.x.x
+    ```
 
 ## SMB
-smbclient -L 10.x.x.x        ← list shares
-
-smbclient \\\\ip\\share       ← connect to share
+*   **List Shares (Anonymous):**
+    ```bash
+    smbclient -L //10.x.x.x/ -N
+    ```
+*   **Connect to Share:**
+    ```bash
+    smbclient //10.x.x.x/sharename -U username
+    ```
 
 ## Redis
-redis-cli -h 10.x.x.x        ← connect
-
-keys *                        ← list all keys
-
-get <keyname>                 ← retrieve value
+*   **Connect:**
+    ```bash
+    redis-cli -h 10.x.x.x
+    ```
+*   **Basic Commands:**
+    ```bash
+    keys *        # List all keys
+    get <key>     # View value of a key
+    info          # Show server info
+    ```
 
 ## Password Cracking (John the Ripper)
 
-**Crack with RockYou:**
+*   **Crack with RockYou:**
     ```bash
     john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
     ```
 *   **Check Already Cracked Passwords:**
-    ```
-    john --show <file name>
+    ```bash
+    john --show hash.txt
     ```
 *   **Extract Zip Hash:**
+    ```bash
+    zip2john secret.zip > hash.txt
     ```
-    zip2john secret.zip > <file name>
-     ```
     
     ##  Remote Access & Shells
     
