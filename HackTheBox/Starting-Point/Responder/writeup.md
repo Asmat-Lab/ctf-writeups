@@ -17,7 +17,8 @@ nmap -sV -sC -p- 10.129.130.249
 - Port 80/tcp open — HTTP
 - Port 5985/tcp open — WinRM (Windows Remote Management)
 
-Navigated to the web application.The page was not loading, so I added the IP address and URL to etc/hosts.
+Navigated to the web application. The page was not loading, so I added the IP address and URL to etc/hosts.
+
 sudo nano /etc/hosts
 
 10.129.130.249    unika.htb
@@ -66,10 +67,10 @@ in a directory called mike
   can be abused over the network
 - What Responder does and how hash capture attacks work
 - Local File Inclusion leading to outbound
-  authentication — a real-world attack chain
+  authentication; a real-world attack chain
 - Offline hash cracking with John the Ripper
   and the rockyou wordlist
 - How to connect to Windows machines via WinRM
   using evil-winrm
-- This machine introduced Windows exploitation —
+- This machine introduced Windows exploitation;
   a big step up from Linux-focused machines
